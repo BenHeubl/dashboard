@@ -1,0 +1,182 @@
+@import 'o-colors/main';
+@import 'components/core/main';
+@import 'components/chart1/main';
+
+
+
+// @import 'o-card/main';
+
+/*
+      TODO: delete this comment
+
+      Write your code here - keep it neat!
+      Split logical parts of you project into components e.g.
+
+      /client
+        - /components
+            - /component-name
+                - styles.scss
+                - index.js
+                - template.html
+*/
+
+
+
+
+h5 {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/*body {
+  font-family: sans-serif;
+  font-size: 22px;
+  line-height: 1.4;
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}*/
+
+/*h5 {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+p {
+  font-family: sans-serif;
+  font-size: 14px;
+}*/
+/*template styles*/
+.gia-chart-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.g-chart-container {
+  width:50%;
+  display: inline-block;
+  margin-top: 30px;
+}
+@media (max-width: 700px) {
+    .g-chart-container {
+      width:50%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .g-name {
+      margin-top: 10px;
+        font-size: 17px;
+    }
+}
+@media (max-width: 600px) {
+  .g-chart-container {
+      width:100%;
+      margin: 0 auto;
+      margin-top: 20px;
+   }
+}
+@media (max-width: 400px) {
+    .g-chart-container {
+      width:100%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+}
+@media (max-width: 350px) {
+    .g-chart-container {
+      width:100%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+}
+.gia-source {
+  border-top: 1px solid #ccc;
+  margin-top: 25px;
+  color: #bdbdbd;
+  padding: 3px 0;
+  font-size: 12px;
+  font-family: 'Metric', Helvetica, sans-serif;
+}
+/*chart styles*/
+.y.axis line {
+    fill: none;
+    stroke: #dcdcdc;
+    stroke-dasharray: 1px 1px;
+    shape-rendering: crispEdges;
+    stroke-width: 1px;
+}
+.x.axis line {
+    fill: none;
+    stroke: grey;
+    shape-rendering: crispEdges;
+    stroke-width: 1px;
+}
+.tick.g-baseline line {
+    stroke: #333333;
+    stroke-dasharray: 0;
+    stroke-width: 1px;
+}
+.axis text {
+  font-family: 'Metric', Helvetica, sans-serif;
+    font-size: 12px;
+    pointer-events: none;
+    fill: #bdbdbd;
+}
+.y.axis text {
+    text-anchor: end !important;
+    font-size:12px;
+    fill: #bdbdbd;
+}
+.domain {
+    display: none;
+}
+.line {
+    stroke: #af4365;
+    stroke-width: 3px;
+    fill: none;
+}
+.area {
+    fill: #af4365;
+    opacity: 0.0;
+}
+.g-name {
+    font-weight: 700;
+      font-size: 12px;
+}
+.g-label-no-show {
+    display: none;
+}
+.g-label-text {
+  font-family: 'Metric', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #333333;
+}
+.g-label-circle {
+    fill: black;
+}
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+.focus {
+    font-size: 14px;
+}
+.focus circle {
+    /*fill: #004e6d;*/
+    fill: black;
+
+}
+.focus text {
+    font-family: 'Metric', Helvetica, sans-serif;
+    font-size: 14px;
+}
+.startline {
+    stroke: #004e6d;
+    stroke-width: 1px;
+    opacity: 0.0;
+}
